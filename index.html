@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github Issues Tracker</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+
+<body class="font">
+
+    <section class="py-15 bg-[#F8FAFC] flex flex-col justify-center items-center h-screen">
+        <div class="w-11/12 mx-auto :">
+            <div
+                class="w-full max-w-[520px] mx-auto p-8 bg-white rounded-lg shadow-[0px_5px_10px_0px_rgba(0,0,0,0.08)]   border border-white flex flex-col justify-center items-center gap-6">
+
+                <div class="flex flex-col justify-start items-center gap-6">
+
+                    <img class="w-24 " src="assets/github-logo.png" alt="">
+
+                    <div class="flex flex-col justify-start items-center gap-1">
+                        <div class="text-center justify-start text-gray-800 text-2xl font-semibold">
+                            GitHub Issues Tracker</div>
+                        <div class="text-center justify-start text-slate-500">Sign in to manage your issues</div>
+                    </div>
+
+                </div>
+
+                <fieldset class="flex flex-col justify-start items-start gap-4 w-full">
+
+                    <label class="text-gray-800 font-medium ">Username</label>
+                    <input id="username" type="text" class="input text-slate-500 w-full" placeholder="Enter Username" />
+
+                    <label class="label">Password</label>
+                    <input id="password" type="password" class="input text-slate-500 w-full"
+                        placeholder="Enter Password" />
+
+
+                    <button id="submitBtn"
+                        class=" p-4 bg-violet-700 rounded-lg flex justify-center items-center text-white font-semibold w-full cursor-pointer hover:bg-violet-950"
+                        type="submit">Sign In
+                    </button>
+
+                </fieldset>
+
+            </div>
+        </div>
+    </section>
+    <script src="custom js/login.js"></script>
+
 </body>
+
 </html>
