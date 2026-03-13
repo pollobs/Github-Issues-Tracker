@@ -11,14 +11,17 @@ function clickButton(id) {
         allButtons.classList.add("active");
         openButtons.classList.remove("active");
         closedButtons.classList.remove("active");
+        loadIssues();
     } else if (id === "open") {
         openButtons.classList.add("active");
         allButtons.classList.remove("active");
         closedButtons.classList.remove("active");
+        loadOpenIssues();
     } else if (id === "closed") {
         closedButtons.classList.add("active");
         allButtons.classList.remove("active");
         openButtons.classList.remove("active");
+        loadClosedIssues();
     }
 
 }

@@ -45,3 +45,39 @@ function getLabel(labels) {
         }
     }).join('');
 }
+
+
+// Single Issue Details
+
+function loadStatus(status) {
+   if (status.toLowerCase() === 'open') {
+        return 'bg-[#00A96E]'
+    } else if (status.toLowerCase() === 'closed') {
+        return 'bg-[#A855F7]'
+    }
+
+}
+
+function loadPriority(priority) {      
+        if (priority.toLowerCase() === 'low') {
+        return 'bg-green-500';
+    } else if (priority.toLowerCase() === 'medium') {
+        return 'bg-yellow-500';
+    } else if (priority.toLowerCase() === 'high') {
+        return 'bg-red-500';
+    }
+}
+
+
+// Load Spinner
+
+function showSpinner(state) {
+    const spinner = document.getElementById('spinner');
+    if (state) {
+        spinner.classList.remove('hidden');
+        cardsContainer.classList.add('hidden');
+    } else {
+        spinner.classList.add('hidden');
+        cardsContainer.classList.remove('hidden');
+    }
+}
