@@ -12,16 +12,19 @@ function clickButton(id) {
         openButtons.classList.remove("active");
         closedButtons.classList.remove("active");
         loadIssues();
+        searchInput.value = '';
     } else if (id === "open") {
         openButtons.classList.add("active");
         allButtons.classList.remove("active");
         closedButtons.classList.remove("active");
         loadOpenIssues();
+        searchInput.value = '';
     } else if (id === "closed") {
         closedButtons.classList.add("active");
         allButtons.classList.remove("active");
         openButtons.classList.remove("active");
         loadClosedIssues();
+        searchInput.value = '';
     }
 
 }

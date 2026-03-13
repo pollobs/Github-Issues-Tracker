@@ -302,9 +302,9 @@ async function loadSingleIssue(id) {
 
 const searchInput = document.getElementById('search-input');
 
-searchInput.addEventListener('input', async (e) => {
+searchInput.addEventListener('input', async function () {
 
-    const inputValue = e.target.value.toLowerCase();
+    const inputValue = searchInput.value.toLowerCase().trim();
 
     showSpinner(true);
 
