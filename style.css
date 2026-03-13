@@ -5,3 +5,8 @@
     font-weight: 400;
     font-style: normal;
 }
+
+.active {
+    background-color: #3B25C1;
+    color: white;
+}
